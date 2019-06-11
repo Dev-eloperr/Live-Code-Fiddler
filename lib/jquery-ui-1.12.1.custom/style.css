@@ -1,0 +1,46 @@
+body{
+    background: #0d0523;
+    margin: 0;
+}
+header{}
+#navbar li{
+    display: inline;
+}
+#navbar{
+    text-align: center;
+}
+#head {
+    color: white;
+    width: 300px;
+    display: inline;
+    padding: 15px;
+}
+#navbar button{
+    text-decoration: none;
+    color: #b8ec79;
+    font-size: 1.0em;
+    padding: 5px 10px 5px 10px;
+    margin: 0 4px 0 4px;
+}
+#foot{
+    color: dimgrey;
+    height: 30px;
+    padding-top: 10px;
+    background: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+section{
+    padding: 15px;
+}
+textarea{
+    resize: none;
+    box-sizing: border-box;
+}
+iframe{
+    box-sizing: border-box;
+}
+
