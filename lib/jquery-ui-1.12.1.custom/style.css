@@ -12,12 +12,16 @@ body{
 }
 #navbar{
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 35%;
 }
 #head {
     color: white;
     width: 300px;
-    display: inline;
-    padding: 15px;
+    padding: 5px;
+
+    margin:5px 0 0 5px ;
 }
 #navbar button{
     text-decoration: none;
@@ -47,4 +51,16 @@ textarea{
 }
 iframe{
     box-sizing: border-box;
+}
+@media (max-width: 600px) {
+
+    #head{
+        text-align: center;
+        width: 100%;
+    }
+
+    #navbar{
+        position: static;
+
+    }
 }

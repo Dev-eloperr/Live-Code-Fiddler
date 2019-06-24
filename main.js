@@ -14,18 +14,26 @@ myTextarea = $("#css_area")[0];
 var css_editor = CodeMirror.fromTextArea(myTextarea, {
     mode: "css",
     lineNumbers: true,
-    extraKeys: {"Ctrl-Space":"autocomplete"}
+    extraKeys: {"Ctrl-Space":"autocomplete"},
+    theme: "dracula",
+    autoCloseTags: true,
+    autoCloseBrackets: true,
+    styleActiveLine: true
 });
 myTextarea = $("#js_area")[0];
 var js_editor = CodeMirror.fromTextArea(myTextarea, {
     mode: "javascript",
     lineNumbers: true,
-    extraKeys: {"Ctrl-Space":"autocomplete"}
+    extraKeys: {"Ctrl-Space":"autocomplete"},
+    theme: "dracula",
+    autoCloseTags: true,
+    autoCloseBrackets: true,
+    styleActiveLine: true
 });
 
 CodeMirror.commands.autocomplete = function(cm) {
     cm.showHint({hint: CodeMirror.hint.anyword});
-}
+};
 
 
 
@@ -35,7 +43,7 @@ var js_btn=false;
 var op_btn=false;
 var flag=0;
 var area_selector;
-var e_hight= $(window).height() - $("header").height() - $("footer").height()-100;
+var e_hight= $(window).height() - $("header").height() - $("footer").height()-80;
 setWidth();
 $(".ui-button").click(function () {
     if(this.id === "html_btn"){
@@ -139,7 +147,7 @@ $("#sortable").draggable({
 });
 */
 $(window).resize(function () {
-
+    setWidth();
 });
 $("textarea").on('change keyup paste',function () {
     $("iframe").contents().find("html").html("<html><head><style>"+$("#css_area").val()+"</style></head><body>"+$("#html_area").val()+"</body></html>");
