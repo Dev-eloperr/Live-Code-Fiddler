@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web Code Player Love</title>
+    <title>Web Code Player Live</title>
+    <link rel="stylesheet" href="Plugin/codemirror-5.48.0/lib/codemirror.css">
     <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/style.css">
     <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
 
@@ -21,7 +22,7 @@
                 <li class="center">
                     <button id="js_btn" class="ui-button">JavaScript</button>
                 </li>
-                <li class="center">
+                <li class="center" >
                     <button id="op_btn" class="ui-button">Output</button>
                 </li>
             </ul>
@@ -29,10 +30,20 @@
     </header>
     <section>
         <div id="sortable">
-        <textarea placeholder="HTML" class="ui-widget-content ui-helper-hidden textarea" name="" id="html_area"></textarea>
-        <textarea placeholder="CSS" class="ui-widget-content ui-helper-hidden textarea" name="" id="css_area"></textarea>
-        <textarea placeholder="Javascript" class="ui-widget-content ui-helper-hidden textarea" name="" id="js_area"></textarea>
-        <iframe  class=" ui-helper-hidden textarea" id="op_area"></iframe>
+            <textarea placeholder="HTML" class=" ui-helper-hidden textarea" name="" id="html_area">
+                <h1>hello</h1>
+            </textarea>
+
+            <textarea placeholder="CSS" class=" ui-helper-hidden textarea" name="" id="css_area">
+                body{
+                    background: blue;
+                }
+                h1{
+                    background: red;
+                }
+            </textarea>
+            <textarea placeholder="Javascript" class=" ui-helper-hidden textarea" name="" id="js_area"></textarea>
+            <iframe  class=" ui-helper-hidden textarea" id="op_area"></iframe>
         </div>
     </section>
     <footer id="foot">
@@ -41,7 +52,15 @@
 <!-- Scripts -->
     <script src="lib/jquery-3.4.1.js"></script>
     <script src="lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <script src="Plugin/codemirror-5.48.0/lib/codemirror.js"></script>
+    <!-- Defining required code modes -->
+    <script src="Plugin/codemirror-5.48.0/mode/xml/xml.js"></script>
+    <script src="Plugin/codemirror-5.48.0/mode/css/css.js"></script>
+    <script src="Plugin/codemirror-5.48.0/mode/javascript/javascript.js" ></script>
+
     <script src="main.js"></script>
+
 <!-- -->
 </body>
 </html>

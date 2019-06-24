@@ -39,8 +39,8 @@ section{
 textarea{
     resize: none;
     box-sizing: border-box;
+    display: inline;
 }
 iframe{
     box-sizing: border-box;
 }
-
