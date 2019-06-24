@@ -2,7 +2,11 @@ body{
     background: #0d0523;
     margin: 0;
 }
-header{}
+.CodeMirror {
+    /* Set height, width, borders, and global font properties here */
+    box-sizing: border-box;
+    display: inline-block;
+}
 #navbar li{
     display: inline;
 }

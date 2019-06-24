@@ -3,7 +3,12 @@ var myTextarea = document.getElementById("html_area");
 var html_editor= CodeMirror.fromTextArea(myTextarea, {
     mode: "xml",
     lineNumbers: true,
-    extraKeys: {"Ctrl-Space":"autocomplete"}
+    extraKeys: {"Ctrl-Space":"autocomplete"},
+    theme: "dracula",
+    autoCloseTags: true,
+    autoCloseBrackets: true,
+    styleActiveLine: true
+
 });
 myTextarea = $("#css_area")[0];
 var css_editor = CodeMirror.fromTextArea(myTextarea, {
@@ -17,6 +22,11 @@ var js_editor = CodeMirror.fromTextArea(myTextarea, {
     lineNumbers: true,
     extraKeys: {"Ctrl-Space":"autocomplete"}
 });
+
+CodeMirror.commands.autocomplete = function(cm) {
+    cm.showHint({hint: CodeMirror.hint.anyword});
+}
+
 
 
 var html_btn=false;
@@ -133,6 +143,8 @@ $(window).resize(function () {
 });
 $("textarea").on('change keyup paste',function () {
     $("iframe").contents().find("html").html("<html><head><style>"+$("#css_area").val()+"</style></head><body>"+$("#html_area").val()+"</body></html>");
+
+    document.getElementsByTagName('iframe')[0].contentWindow.eval($("#js_area").val());
 });
 
 

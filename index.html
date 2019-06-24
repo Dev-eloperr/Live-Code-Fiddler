@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>Web Code Player Live</title>
     <link rel="stylesheet" href="Plugin/codemirror-5.48.0/lib/codemirror.css">
+    <link rel="stylesheet" href="Plugin/codemirror-5.48.0/theme/dracula.css">
+    <link rel="stylesheet" href="Plugin/codemirror-5.48.0/addon/hint/show-hint.css">
+
     <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/style.css">
     <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
 
 </head>
 <body>
@@ -30,19 +34,17 @@
     </header>
     <section>
         <div id="sortable">
-            <textarea placeholder="HTML" class=" ui-helper-hidden textarea" name="" id="html_area">
-                <h1>hello</h1>
-            </textarea>
+            <textarea placeholder="HTML" class=" ui-helper-hidden textarea" name="" id="html_area"><h1 id="h">hello</h1></textarea>
 
-            <textarea placeholder="CSS" class=" ui-helper-hidden textarea" name="" id="css_area">
-                body{
-                    background: blue;
-                }
-                h1{
-                    background: red;
-                }
-            </textarea>
-            <textarea placeholder="Javascript" class=" ui-helper-hidden textarea" name="" id="js_area"></textarea>
+            <textarea placeholder="CSS" class=" ui-helper-hidden textarea" name="" id="css_area">body{
+    background: blue;
+}
+    h1{
+        background: red;
+}</textarea>
+            <textarea placeholder="Javascript" class=" ui-helper-hidden textarea" name="" id="js_area">
+var head1 = document.getElementById("h");
+head1.style.color= "green";</textarea>
             <iframe  class=" ui-helper-hidden textarea" id="op_area"></iframe>
         </div>
     </section>
@@ -58,6 +60,18 @@
     <script src="Plugin/codemirror-5.48.0/mode/xml/xml.js"></script>
     <script src="Plugin/codemirror-5.48.0/mode/css/css.js"></script>
     <script src="Plugin/codemirror-5.48.0/mode/javascript/javascript.js" ></script>
+
+    <!-- Add ons -->
+    <script src="Plugin/codemirror-5.48.0/addon/hint/show-hint.js"></script>
+    <script src="Plugin/codemirror-5.48.0/addon/hint/css-hint.js"></script>
+    <script src="Plugin/codemirror-5.48.0/addon/hint/anyword-hint.js"></script>
+
+
+    <script src="Plugin/codemirror-5.48.0/addon/edit/closebrackets.js"></script>
+
+    <script src="Plugin/codemirror-5.48.0/addon/edit/closetag.js"></script>
+
+    <script src="Plugin/codemirror-5.48.0/addon/selection/active-line.js"></script>
 
     <script src="main.js"></script>
 
