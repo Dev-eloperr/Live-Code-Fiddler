@@ -1,5 +1,8 @@
 # Live-Code-Fiddler
-> Live code playground to create a immersive web development environment on any device, anywhere!!
+> Live code playground to create an immersive web development environment on any device, anywhere!!
+
+> Try it out at [Live-Code-Fiddler](http://live-code-fiddler.com.preview.services/)  💥💥💥
+######  (site not yet optimized for mobile)
 
 ## Table of contents
 * [Screenshots](#screenshots)
