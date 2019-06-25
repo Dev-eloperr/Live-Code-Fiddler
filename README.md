@@ -12,8 +12,8 @@
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
-![Example screenshot](./img/screenshot2.png)
+![Example screenshot](./img/Screenshot.png)
+![Example screenshot](./img/Screenshot2.png)
 
 ## Technologies
 * HTML 5.0
