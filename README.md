@@ -1,7 +1,7 @@
 # Live-Code-Fiddler
 > Live code playground to create an immersive web development environment on any device, anywhere!!
 
-> Try it out at <a href="http://live-code-fiddler.com.preview.services/" target="_blank">Live-Code-Fiddler</a> 💥💥💥
+> Try it out at <a href="https://livecodefiddler.netlify.com/" target="_blank">Live-Code-Fiddler</a> 💥💥💥
 ######  (site not yet optimized for mobile)
 
 ## Table of contents
